@@ -29,7 +29,7 @@ function btnStopServer_click() {
 	$('#txtContent').removeAttr('readonly');
 }
 
-function startServer(host, port, content, next) {
+function startServer(host, port, content) {
 	server = http.createServer((function(content) {
 		return function (req, res) {
 			res.writeHead(200, {'Content-Type': 'text/html'});
