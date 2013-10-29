@@ -1,0 +1,11 @@
+{
+	"name": "Webkit web server",
+	"main": "index.html",
+	"window": {
+		"toolbar": false,
+	    "frame": true,
+	    "width": 500,
+	    "height": 400,
+	    "position": "mouse"
+	}
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Webkit web server</title>
+
+		<!-- jQuery -->
+		<script src="vendor/jquery/jquery-2.0.3.min.js"></script>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-theme.min.css">
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="css/webserver.css">
+		<script src="js/webserver.js"></script>
+	</head>
+	<body>
+		<div class="main">
+			<form role="form">
+				<div class="form-group">
+					<label for="txtContent">Content to return</label>
+					<textarea style="font-family: monospace" id="txtContent" class="form-control" rows="5">&lt;p&gt;Hello!&lt;/p&gt;</textarea>
+				</div>
+				<div class="form-group">
+					<label for="txtHost">Host</label>
+					<input type="text" id="txtHost" class="form-control" value="127.0.0.1">
+				</div>
+				<div class="form-group">
+					<label for="txtPort">Port to listen</label>
+					<input type="number" min="1" max="65535" id="txtPort" class="form-control" value="8080">
+				</div>
+				<div class="form-group">
+					<button type="button" id="btnStartServer" class="btn btn-success" onclick="btnStartServer_click();">Start server</button>
+					<button style="display: none" type="button" id="btnStopServer" class="btn btn-danger" onclick="btnStopServer_click();">Stop server</button>
+					<small id="message"></small>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
